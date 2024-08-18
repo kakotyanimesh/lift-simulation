@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lift simulation</title>
+    <title>Lift Simulation</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="navbar">
-        <div class="lg">
-            <a href="">lIFT SIMULATION</a>
-        </div>
-        <div class="navTags">
-            <a href="">github</a>
-            <a href="">linkedin</a>
-            <a href="">twitter</a>
-        </div>
+    <div class="container">
+        <h1 style="font-size: 3vw;">Lift Simulation</h1>
+        <form id="liftForm">
+            <div class="formone">
+                <label for="floors">Number of Floors:</label>
+                <input type="number" id="floors" name="floors" required min="2">
+            </div>
+            
+            <br>
+            <div class="formtwo">
+                <label for="lifts">Number of Lifts:</label>
+                <input type="number" id="lifts" name="lifts" required min="1">
+            </div>
+            
+            <br>
+            <button type="submit">Generate</button>
+        </form>
+        
+        <div id="building"></div>
     </div>
-
-    <div class="liftclass">
-        <input type="text" placeholder="">
-    </div>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>

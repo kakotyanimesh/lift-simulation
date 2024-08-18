@@ -1,16 +1,83 @@
-body{
-    background-color: rgb(171, 111, 51);
-}
-
-#navbar{
-    margin: 2vw;
+body {
+    font-family: aesthetic, sans-serif;
+    background-color: #9a7171;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: space-between;
-    font-size: 2vw;
+    justify-content: center;
+    align-items: center;
     
 }
 
-#navbar a{
-    text-decoration: none;
-    color: white;
+@font-face {
+    font-family: aesthetic ;
+    src: url(Aesthetic-Regular.ttf);
 }
+
+.container {
+    width: 100%;
+    /* max-width: 600px; */
+    margin: auto;
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+    font-size: 1.5vw;
+}
+
+input{
+    width: 7vw;
+    height: 2vw;
+    font-size: 25px;
+    border-radius: 8px;
+}
+
+button {
+    padding: 14px;
+    color: #242222;
+    border: none;
+    cursor: pointer;
+    border-radius: 9px;
+    background-color: #a0b3ff;
+    font-family: aesthetic;
+    font-size: 1.3vw;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+#building {
+    display: inline-block;
+    white-space: nowrap;
+    width: auto;
+    /* padding: 5px;  */
+   
+    padding: 14px;
+
+    flex-direction: column;
+   
+}
+
+.lift{
+    margin-right: 10px;
+}
+button{
+    margin: 0 5px;
+    padding: 10px;
+}
+
+.floor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 2vw;
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+}
+
+
